@@ -135,9 +135,6 @@ public class BooksController {
                 model.addAttribute("notBooks", "");
             }
         }
-
-
         return "books/search";
     }
-
 }

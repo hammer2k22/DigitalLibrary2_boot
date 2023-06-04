@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Книга</title>
+</head>
+<body style="font-size: 120%">
+
+
+<p th:text="${book.getTitle()+', '+book.getAuthor()+', '+book.getYear()}">NAME</p>
+
+<div th:if="${owner} == null ">
+    <span>Эта книга свободна!</span>
+</div>
+
+<div th:unless="${owner} == null ">
+    <span>Эта книга занята!</span>
+</div>
+
+</body>
+</html>

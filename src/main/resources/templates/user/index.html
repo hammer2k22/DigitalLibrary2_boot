@@ -7,16 +7,15 @@
 <body>
 <h1>Библиотека</h1>
 
-<a href="/user">Для пользователей</a>
+<a href="/user/books">Список книг</a>
 <br/>
 
-<a href="/admin">Для администраторов</a>
+<a href="/user/search">Поиск книги</a>
 <br/>
 
-<p>
 <form th:action="@{/logout}" th:method="POST">
     <input type="submit" value="Выйти" />
 </form>
-</p>
+
 </body>
 </html>
